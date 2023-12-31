@@ -10,6 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.44/moment-timezone-with-data-1970-2030.min.js"></script>
+
     <title>World Clock - HJ</title>
   </head>
   <body>
@@ -17,23 +20,23 @@
       <h1>WORLD CLOCK</h1>
       <select>
         <option value="">Select a city..</option>
-        <option value="london">London</option>
-        <option value="new-york">New York</option>
-        <option value="seoul">Seoul</option>
+        <option value="london">Mannheim</option>
+        <option value="new-york">Prague</option>
+        <option value="seoul">Orlean</option>
       </select>
-      <div class="city">
+      <div class="city" id="prague">
         <div>
-          <h2>Los Angeles</h2>
-          <div class="date">August 15, 2022</div>
+          <h2>Prague</h2>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
+        <div class="time"></div>
       </div>
-      <div class="city">
+      <div class="city" id="seoul">
         <div>
-          <h2>Sydney</h2>
+          <h2>Seoul</h2>
           <div class="date">August 15, 2022</div>
         </div>
-        <div class="time">1:48:15 <small>AM</small></div>
+        <div class="time"></div>
       </div>
     </div>
     <footer>
