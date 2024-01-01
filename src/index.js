@@ -9,7 +9,7 @@ function updateTime() {
       .tz("Europe/Prague")
       .format("MMM D, YYYY");
     pragueTimeElement.innerHTML = pragueTime.format(
-      "h:mm:ss:SS [<small>]A[</small]"
+      "h:mm:ss [<small>]A[</small]"
     );
   }
   let seoulElement = document.querySelector("#seoul");
@@ -22,7 +22,7 @@ function updateTime() {
       .tz("Asia/Seoul")
       .format("MMM D, YYYY");
     seoulTimeElement.innerHTML = seoulTime.format(
-      "h:mm:ss:SS [<small>]A[</small]"
+      "h:mm:ss [<small>]A[</small]"
     );
   }
 }
@@ -39,13 +39,13 @@ function updateCity(event) {
             <div class="date">${cityTime.format("MMM D YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
-            "h:mm:ss:SS"
+            "h:mm:ss"
           )}<small>${cityTime.format("A")}</small></div>
         </div>`;
 }
 
 updateTime();
-setInterval(updateTime, 1);
+setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
